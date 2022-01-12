@@ -1,6 +1,12 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import SingleCard from './components/SingleCard';
+import pic1 from "/src/img/helmet-1.png"
+import pic2 from "/src/img/potion-1.png"
+import pic3 from "/src/img/ring-1.png"
+import pic4 from "/src/img/scroll-1.png"
+import pic5 from "/src/img/shield-1.png"
+import pic6 from "/src/img/sword-1.png"
 
 const NUMBER_OF_CARDS = 6;
 const STAY_OPEN_IN_MS = 600;
@@ -83,7 +89,6 @@ function App() {
      <p>Turns: {turns}</p>
      <div className="card-grid">
        {cards.map(card => (
-         //<SingleCard card={card} key={card.id} handleChoice={handleChoice} flipped={card.flipped}/>
            <SingleCard 
               card={card} 
               key={card.id} 
